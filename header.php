@@ -16,13 +16,13 @@
     <meta http-equiv="keywords" content="京都,滋賀,建設業許可,会社設立,記帳代行,産業廃棄物収集運搬業許可,特殊車両通行許可,行政書士," />
     <meta http-equiv="description" content="滋賀・京都での会社設立・建設業許可申請・特殊車両通行許可申請なら、堀裕子行政書士事務所まで。記帳代行・契約書・遺言・遺産分割協議書・相続についても承ります。２４時間無料相談対応！！" />
 
-    <link rel="shortcut icon" type="image/x-icon" href="http://test-up.jp/horys/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico">
 </head>
     <?php wp_head(); ?>
 
     <body class="<?php echo is_home() ? 'page--top' : "" ?>">
         <div class="main-body">
-            <?php if( is_page_template('contents01.php') || is_page_template('contents02.php') ){ ?>
+            <?php if( is_page_template('contents01.php') || is_page_template('contents02.php') || is_page_template('article_temp.php') ){ ?>
                 <div class="contentLeft">
             <?php } ?>
             <header class="header">
@@ -35,8 +35,8 @@
 
                     <h1><span class="sp_closeMenu is_mb"><a href="<?php echo home_url(); ?>/"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_sphead.png" alt="堀裕子行政書士事務所"></a></span></h1> </div>
 
-                    <?php if( !(is_page_template('contents01.php') || is_page_template('contents02.php')) ){ ?>
-                        <div class="headerlogo"> <a href="#"><img class="is_pc" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=""></a> </div>
+                    <?php if( !(is_page_template('contents01.php') || is_page_template('contents02.php') || is_page_template('article_temp.php')) ){ ?>
+                        <div class="headerlogo"> <a href="<?php echo home_url(); ?>"><img class="is_pc" src="<?php echo get_template_directory_uri(); ?>/images/logo.png" alt=""></a> </div>
                     <?php } ?>
 
                 <nav class="navMain">

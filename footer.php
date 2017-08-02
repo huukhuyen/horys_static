@@ -1,4 +1,3 @@
-<?php wp_footer(); ?>
 <footer class="footer effect">
     <div class="footerIn">
         <h2 class="logoF"><a href="<?php echo home_url(); ?>/"><img class="" src="<?php echo get_template_directory_uri(); ?>/images/logoF.png" alt=""><!--<img class="is_mb" src="<?php echo get_template_directory_uri(); ?>/images/logoF3.png" alt="">--></a></h2>
@@ -14,6 +13,7 @@
         </div>
     </div>
 </footer>
+<?php wp_footer(); ?>
 <!-- /footer -->
 </body>
 

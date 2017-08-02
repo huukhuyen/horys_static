@@ -1,6 +1,11 @@
 <div class="contentRight">
     <div class="contentRightIn">
+        <?php if (is_page_template('contents02.php')) { ?>
+            <h2 class="titleSection">会社設立についての<br>気になるあれこれ</h2>
+        <?php } else {?>
         <h2 class="titleSection">建設業許可の<br>気になるあれこれ</h2>
+        <?php }?>
+
         <ul class="navSidebar">
             <li><a href="<?php echo home_url(); ?>/">専任技術者ってなに？</a></li>
             <li><a href="<?php echo home_url(); ?>/">営業務管理責任者ってなに？</a></li>
@@ -40,5 +45,7 @@
             </div>
         </footer>
     </div>
-</div>
-<!-- /contentRight -->
+
+<?php if( is_page_template('contents01.php') || is_page_template('contents02.php') || is_page_template('article_temp.php') ){ ?>
+    </div>
+<?php } ?>
